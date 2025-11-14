@@ -260,18 +260,18 @@ show_credentials() {
   echo -e "\n${RED}Install Successfully !${NC}"
   echo -e "${YELLOW}Username :${NC} root"
   echo -e "${YELLOW}Password :${NC} ********\n"
-  echo -e "${GREEN}Install VPS akan memakan waktu 10 menitan${NC}\n"
+  echo -e "${GREEN}La instalación del VPS tardará unos 10 minutos.${NC}\n"
 }
 
 # Function to prompt for reboot
 prompt_reboot() {
   while true; do
-    echo -e "${RED}➽ Reboot VPS nya yuk biar sukses! (y/n):${NC} "
+    echo -e "${RED}➽ ¡Reiniciemos el VPS para que funcione correctamente! (y/n):${NC} "
     read reboot_choice
     case $reboot_choice in
       y|Y) reboot; break ;;
       n|N) exit 0 ;;
-      *) echo "➽ Pilihan tidak valid, coba lagi." ;;
+      *) echo "➽ Selección no válida, inténtelo de nuevo." ;;
     esac
   done
 }
