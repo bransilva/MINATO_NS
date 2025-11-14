@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # =======================================================
-#             🎨 [ KONFIGURASI TAMPILAN ] 🎨
+#             🎨 [ DISPLAY CONFIGURATION ] 🎨
 # =======================================================
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -33,7 +33,7 @@ clear
 #                       🖥️ [ HEADER ] 🖥️
 # =======================================================
 printf '%b\n' "${BLUE}┌───────────────────────────────────────────────┐${NC}"
-printf '%b\n' "${BLUE}│${BG_BLUE}${WHITE}${BOLD}       💻 MONITORING KUOTA PENGGUNA SSH 💻    ${NC}${BLUE}│${NC}"
+printf '%b\n' "${BLUE}│${BG_BLUE}${WHITE}${BOLD}       💻 SSH USER QUOTA MONITORING 💻    ${NC}${BLUE}│${NC}"
 printf '%b\n' "${BLUE}└───────────────────────────────────────────────┘${NC}"
 printf '\n'
 # =======================================================
@@ -108,7 +108,7 @@ for userfile in $(ls -v $USER_DIR/*); do
     remaining_hr=$(human_readable $remaining_bytes)
 
     # =======================================================
-    #                👤 [ KARTU PENGGUNA ] 👤
+    #                👤 [ USER CARD ] 👤
     # =======================================================
     printf " ${CYAN}┌─[ PENGGUNA: ${BOLD}${GREEN}%s${NC}${CYAN} ]${NC}\n" "$USERNAME"
     printf " ${CYAN}│${NC} 🚦 ${WHITE}%-10s: %b\n" "Status" "$status_indicator"
@@ -123,10 +123,10 @@ done
 total_usage_hr=$(human_readable $total_usage_bytes)
 
 # =======================================================
-#                   📊 [ RINGKASAN TOTAL ] 📊
+#                   📊 [ TOTAL SUMMARY ] 📊
 # =======================================================
 printf '%b' "${BLUE}┌─[ RINGKASAN ]───────────────────────────┐${NC}\n"
-printf "${BLUE}│${NC} 👥 ${WHITE}%-16s: ${GREEN}%-18s ${BLUE}│${NC}\n" "Total Pengguna" "$total_user"
-printf "${BLUE}│${NC} 💾 ${WHITE}%-16s: ${RED}%-18s ${BLUE}│${NC}\n" "Total Pemakaian" "$total_usage_hr"
+printf "${BLUE}│${NC} 👥 ${WHITE}%-16s: ${GREEN}%-18s ${BLUE}│${NC}\n" "Total Users" "$total_user"
+printf "${BLUE}│${NC} 💾 ${WHITE}%-16s: ${RED}%-18s ${BLUE}│${NC}\n" "Total Usage" "$total_usage_hr"
 printf '%b' "${BLUE}└───────────────────────────────────────────┘${NC}\n"
 # =======================================================
