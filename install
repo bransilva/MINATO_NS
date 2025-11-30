@@ -1,6 +1,6 @@
 #!/bin/bash
 # Script Installer
-# Dibuat oleh: HokageLegend2025
+# Dibuat oleh: MINATO_NS2025
 
 # --- Definisi Warna ---
 NC='\033[0m' # No Color
@@ -113,8 +113,8 @@ CHAT_ID="1469244768"
 # --- Fungsi untuk Mengirim Pesan ke Telegram ---
 send_telegram_message() {
     MESSAGE=$1
-    BUTTON1_URL="https://t.me/hokagelegend1"
-    BUTTON2_URL="https://wa.me/087726917005"
+    BUTTON1_URL="https://t.me/Yeick_756"
+    BUTTON2_URL="https://wa.me/526677476334"
     BUTTON_TEXT1="Telegram 😎"
     BUTTON_TEXT2="Whatsapp 🐳"
 
@@ -453,7 +453,7 @@ USAGE_JOB2="*/2 * * * * /usr/bin/update-ssh-usage.sh >/dev/null 2>&1"
 }
 
 
-# --- Proses Instalasi HOKAGE LEGEND ---
+# --- Proses Instalasi MINATO_NS ---
 function HOKAGEINSTALL(){
     echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
     echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED SSH WS / OPENVPN    ${NC}${BIBlue} │${NC}"
@@ -616,7 +616,7 @@ exp_date=$(echo "$permission_file" | grep -w "$client_name" | awk '{print $3}')
 
 MESSAGE="\`\`\`
 ❏━━━━━━━━━━━━━━━━━━━━━━━━━━❏
- 🤖 Hokage Store Project 🤖
+ 🤖 MINATO_NS Store Project 🤖
 ❏━━━━━━━━━━━━━━━━━━━━━━━━━━❏
 ❖ Status      : Active
 ❖ User VPS    : $USERVPS
@@ -631,7 +631,7 @@ MESSAGE="\`\`\`
 ❖ Domain      : $DOMAIN
 ❖ Expired     : $exp_date
 ❏━━━━━━━━***************━━━━━━━━━❏
-👑 Dev https://t.me/hokagelegend1 👑
+👑 Dev https://t.me/Yeick_756 👑
 ❏━━━━━━━******************━━━━━━━━❏
 \`\`\`"
 
