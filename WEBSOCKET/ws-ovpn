@@ -14,14 +14,14 @@ PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
 DEFAULT_HOST = '127.0.0.1:443'
-# String harus di-encode saat dikirim melalui socket
+# Las cadenas deben estar codificadas cuando se envían a través de un socket.
 RESPONSE = b'HTTP/1.1 101 \x1b[32m!!.. auto Escript premiun..!!!\x1b[0m\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: foo\r\n\r\n'
-# Catatan: Bagian HTML seperti <b><font color="green"> tidak akan berfungsi di sini,
-# Karena ini adalah respons HTTP biasa, bukan konten web. Saya menggantinya
-# dengan escape sequence ANSI untuk warna hijau jika terminal mendukungnya,
-# atau Anda bisa menghapusnya sepenuhnya. Jika Anda ingin tampilan web,
-# ini harus menjadi proxy web yang sebenarnya, bukan hanya websocket.
-# Jika tujuannya hanya teks biasa, hilangkan tag HTML dan kode warna ANSI.
+# Nota: Los elementos HTML como <b><font color="green"> no funcionarán aquí,
+# porque se trata de una respuesta HTTP simple, no de contenido web. Los reemplacé
+# con secuencias de escape ANSI para el color verde si tu terminal lo admite,
+# o puedes eliminarlos por completo. Si quieres una vista web,
+# debe ser un proxy web real, no solo un websocket.
+# Si el destino es solo texto sin formato, elimina las etiquetas HTML y los códigos de color ANSI.
 # Contoh: RESPONSE = b'HTTP/1.1 101 Switching Protocols\r\nUpgrade: websocket\r\nConnection: Upgrade\r\nSec-WebSocket-Accept: foo\r\n\r\n'
 
 class Server(threading.Thread):
