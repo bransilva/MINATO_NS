@@ -370,7 +370,7 @@ echo -e "$COLOR1│ ${WH}[${COLOR1}05${WH}]${NC} ${COLOR1}• ${WH}BACKUP   ${WH
 echo -e "$COLOR1│                                                   $COLOR1│ $NC"
 echo -e "${BLUE}╭═══════${PURPLE}══════ • ${GREEN}CHECK USER ONLINE${YELLOW} • ${RED}═══════════════╮${NC}"
 echo -e "${CYAN}│             🔍 ELIGE UN NÚMERO${NC} ${MAGENTA}[12] 🔍${YELLOW}           │"
-echo -e "${CYAN}│      VISUALIZANDO EL ESTADO DEL USUARIO EN LÍNEA${NC}${MAGENTA}  ${YELLOW}           │"
+echo -e "${CYAN}│      VISUALIZANDO EL ESTADO DEL USUARIO EN LÍNEA${NC}${MAGENTA}  ${YELLOW} │"
 echo -e "${YELLOW}╰══${GREEN}==================${BLUE}══=======${PURPLE}══════════════════════${RED}╯${NC}"
 
 echo -e "${MAGENTA}╭═══════${CYAN}══════ • ${RED}GENOM SCRIPT PRO${BLUE} • ${GREEN}════════════════╮${NC}"
