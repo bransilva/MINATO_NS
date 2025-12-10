@@ -19,11 +19,11 @@ sleep 3
 cd
 
 ns_domain_cloudflare() {
-	DOMAIN=hokagelegend.web.id
+	DOMAIN=nstr.arte-master756.xyz
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
-	SUB_DOMAIN=${SUB}.hokagelegend.web.id
-	NS_DOMAIN=${SUB_DOMAIN}.sg-ujicoba.hokagelegend.web.id
+	SUB_DOMAIN=${SUB}.nstr.arte-master756.xyz
+	NS_DOMAIN=${SUB_DOMAIN}.sg-ujicoba.nstr.arte-master756.xyz
 	CF_ID=faridaumiabi@gmail.com
         CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
 	set -euo pipefail
