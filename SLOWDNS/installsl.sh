@@ -23,7 +23,7 @@ ns_domain_cloudflare() {
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
 	SUB_DOMAIN=${SUB}.nstr.arte-master756.xyz
-	NS_DOMAIN=${SUB_DOMAIN}.sg-ujicoba.nstr.arte-master756.xyz
+	NS_DOMAIN=${SUB_DOMAIN}.sg.nstr.arte-master756.xyz
 	CF_ID=faridaumiabi@gmail.com
         CF_KEY=ab8d0901acb186291e58f21359d07e7b847dc
 	set -euo pipefail
